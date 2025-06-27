@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Git & GitHub Documentatie</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Git & GitHub Documentatie</header>
+        <a class="nav-link" href="#Wat_is_Git">Wat is Git</a>
+        <a class="nav-link" href="#Eerste_Commit_maken">Eerste Commit maken</a>
+        <a class="nav-link" href="#Branching_en_Merging">Branching en Merging</a>
+        <a class="nav-link" href="#Remote_repositories_en_GitHub">Remote repositories en GitHub</a>
+        <a class="nav-link" href="#Veelgebruikte_commando">Veelgebruikte commando</a>
+  </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Wat_is_Git">
+            <header>Wat is Git</header>
+            <p>Git is een versiebeheersysteem waarmee je wijzigingen in bestanden kunt bijhouden. Het wordt veel gebruikt in softwareontwikkeling om samen te werken aan code.</p>
+            <p>Met Git kun je teruggaan naar vorige versies, nieuwe versies maken en samenwerken zonder elkaars werk te overschrijven. Gebruik git init om een repository te starten.</p>
+        </section>
+        <section class="main-section" id="Eerste_Commit_maken">
+            <header>Eerste Commit maken</header>
+            <p>Een commit is een momentopname van je project. Het bevat de wijzigingen die je hebt gemaakt sinds je laatste commit.</p>
+            <p>Voordat je kunt committen, moet je Git initialiseren in je map met <code>git init</code>.</p>
+            <p>Daarna voeg je bestanden toe met <code>git add .</code> en commit je ze met <code>git commit -m &quot;Eerste commit&quot;</code>.</p>
+    </section>
+        </section>
+        <section class="main-section" id="Branching_en_Merging">
+            <header>Branching en Merging</header>
+            <p>Branches zijn aparte lijnen van ontwikkeling. Ze maken het mogelijk om nieuwe functies te bouwen zonder de hoofdversie te verstoren.</p>
+            <p>Je kunt een nieuwe branch maken met <code>git branch nieuwe-feature</code>.</p>
+            <p>En ernaar overstappen met <code>git checkout nieuwe-feature</code>.</p>
+            <p>Als je klaar bent, kun je je branch mergen met <code>git merge nieuwe-feature</code>.</p>
+        </section>
+        <section class="main-section" id="Remote_repositories_en_GitHub">
+            <header>Remote repositories en GitHub</header>
+            <p>Remotes zijn online versies van je project, bijvoorbeeld op GitHub.</p>
+            <p>Je koppelt je lokale repo aan een remote met <code>git remote add origin https://github.com/jouwwaarde/projectnaam.git</code>.</p>
+            <p>Daarna push je je commits online met <code>git push -u origin main</code>.</p>
+        </section>
+        <section class="main-section" id="Veelgebruikte_commando">
+            <header>Veelgebruikte commando</header>
+            <ul>
+                <li><code>git status</code> – toont de status van je bestanden</li>
+                <li><code>git log</code> – laat commitgeschiedenis zien</li>
+                <li><code>git diff</code> – toont veranderingen tussen versies</li>
+                <li><code>git clone [url]</code> – kloont een remote repo</li>
+                <li><code>git pull</code> – haalt en merge't updates van remote</li>
+            </ul>
+            <p>Met deze commando’s kun je snel de meeste taken in Git uitvoeren.</p>
+        </section>
+    </main>
+</body>
+</html>
